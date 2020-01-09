@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:local_event/models/category.dart';
+import 'package:local_event/models/event.dart';
 import 'package:local_event/styleguide.dart';
 import 'package:provider/provider.dart';
 
 import '../../app_state.dart';
 import 'category_widget.dart';
+import 'event_widget.dart';
 import 'home_page_background.dart';
 
 class HomePage extends StatelessWidget {
@@ -57,7 +59,18 @@ class HomePage extends StatelessWidget {
                           ),
                         ),
                       ),
-                    )
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                      child: Consumer<AppState>(
+                        builder: (context, appState, _) => Column(
+                          children: <Widget>[
+                            for (final event in events.where((e) => e.catgoryIDs.contains(appState.selectedCategoryID)))
+                              EventWidget(event: event,)
+                          ],
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
