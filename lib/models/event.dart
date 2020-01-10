@@ -21,9 +21,10 @@ final fiveKmRunEvent = Event(
   description: "",
   location: "Pleasant Park",
   duration: "3h",
-  punchLine1: "Marathon!",
+  punchLine1: "Marathon! ",
   punchLine2: "The lastest fad in foodology, get the inside scoup.",
-  catgoryIDs: [0, 1]
+  catgoryIDs: [0, 1],
+  galleryImages: [],
 );
 
 final cookingEvent = Event(
@@ -32,7 +33,7 @@ final cookingEvent = Event(
   description: "Guest list fill up fast so be sure to apply before handto secure a spot.",
   location: "Food Court Avenue",
   duration: "4h",
-  punchLine1: "Granite Cooking",
+  punchLine1: "Granite Cooking. ",
   punchLine2: "The lastest fad in foodology, get the inside scoup.",
   catgoryIDs: [0, 2],
   galleryImages: [
@@ -48,9 +49,10 @@ final musicConcert = Event(
   description: "Listen to Arijit's latest compositions.",
   location: "D.Y. Patil Stadium, Mumbai",
   duration: "5h",
-  punchLine1: "Music Lovers!",
+  punchLine1: "Music Lovers! ",
   punchLine2: "The lastest fad in foodology, get the inside scoup.",
-  catgoryIDs: [0, 1]
+  catgoryIDs: [0, 1],
+  galleryImages: [],
 );
 
 final golfCompetition = Event(
@@ -59,9 +61,10 @@ final golfCompetition = Event(
   description: "",
   location: "NSIC Ground, Okhlan",
   duration: "4d",
-  punchLine1: "Golf!",
+  punchLine1: "Golf! ",
   punchLine2: "The lastest fad in foodology, get the inside scoup.",
-  catgoryIDs: [0, 3]
+  catgoryIDs: [0, 3],
+  galleryImages: [],
 );
 
 final events = [
